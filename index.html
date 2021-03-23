@@ -1,0 +1,24 @@
+<html>
+<head><script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script></head>
+<body>
+
+
+<script>
+var myCanvas = document.createElement('canvas');
+document.body.appendChild(myCanvas);
+myCanvas.width = 1920;
+myCanvas.height = 1080;
+
+var myConfetti = confetti.create(myCanvas, {
+  resize: true,
+  useWorker: false,
+});
+myConfetti({
+  particleCount: 100,
+  spread: 180
+  // any other options from the global
+  // confetti function
+});
+</script>
+</body>
+</html>
